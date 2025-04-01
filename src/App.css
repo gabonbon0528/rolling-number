@@ -23,19 +23,11 @@
   --animate-playing: playing 1s linear infinite;
 
   @keyframes playing {
+    0% {
+      transform: translateY(0);
+    }
     100% {
       transform: translateY(-90%);
-    }
-  }
-
-  --animate-wiggle: wiggle 1s ease-in-out infinite;
-  @keyframes wiggle {
-    0%,
-    100% {
-      transform: rotate(-3deg);
-    }
-    50% {
-      transform: rotate(3deg);
     }
   }
 }
